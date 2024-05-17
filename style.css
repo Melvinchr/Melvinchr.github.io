@@ -1,0 +1,192 @@
+/* @font-face { */
+/*     font-family: "Poppins"; */
+/*     src: url('assets/font/Poppins-Bold.ttf') format('truetype') */
+/*     font-weight: bold; */
+/*     font-style: normal; */
+/* } */
+
+@font-face {
+    font-family: "Poppins";
+    src: url('assets/font/Poppins-Regular.ttf') format('truetype')
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* @font-face { */
+/*     font-family: "Poppins"; */
+/*     src: url('assets/font/Poppins-ExtraLight.ttf') format('truetype') */
+/*     font-weight: extralight; */
+/*     font-style: normal; */
+/* } */
+
+:root {
+    --text: #0a1012;
+    --background: #fafcfd;
+    --background-alt: #fafcfd;
+    --primary: #46a4c7;
+    --secondary: #89cee6;
+    --accent: #5ac4eb;
+}
+
+body {
+    /* font-family: Poppins, sans-serif; */
+    font-family: "Poppins";
+    font-weight: normal;
+    font-style: normal;
+    /* font-family: sans-serif; */
+    margin: 0;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+.sidebar {
+    background-color: var(--background);
+    border-right: 1px solid var(--text);
+    height: 100%;
+    width: 4em;
+    position: fixed;
+    overflow: hidden;
+    transition: .3s;
+    top: 0;
+    z-index: 1;
+}
+
+.sidebar svg {
+    width: 2em;
+    height: 2em;
+    padding: 1em;
+    transition: .3s;
+    /* Generate filter with https://codepen.io/sosuke/pen/Pjoqqp */
+    filter: invert(7%) sepia(29%) saturate(367%) hue-rotate(148deg) brightness(98%) contrast(103%);
+}
+
+#sepparator {
+    background: var(--text);
+    border-radius: 0.2em;
+    height: 0.2em;
+    margin: 0 0.75em;
+    transition: .3s;
+}
+
+#sepparator.sepparator-active {
+    background: var(--primary);
+    filter: drop-shadow(0 0 0.2em var(--primary));
+}
+
+.sidebar a {
+    text-decoration: none;
+}
+
+.sidebar a span {
+    color: var(--text);
+    font-size: 1.5em;
+    margin-bottom: 1px;
+}
+
+.sidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar ul li {
+    display: block ruby;
+}
+
+main {
+    margin-left: 4em;
+    padding: 3em;
+}
+
+.offers {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.offer {
+    flex: 3;
+    margin: 0 2em;
+    border: 0.5em solid var(--primary);
+    border-radius: 1em;
+    padding: 1em 3em;
+    height: 16em;
+    transition: .4s;
+    position: relative;
+    color: var(--text);
+    text-decoration: none;
+}
+
+.offer:hover {
+    transform: scale(1.08);
+}
+
+.button {
+    bottom: 2em;
+    right: 2em;
+    position: absolute;
+    background-color: var(--background-alt);
+    color: var(--text);
+    cursor: pointer;
+    outline: none;
+    z-index: 0;
+    border-radius: 0.7em;
+    padding: 0.5em 1.8em;
+    text-decoration: none;
+    border: 3px solid var(--text);
+}
+
+.button:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff00c8, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(0.2em);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 0.7em;
+}
+
+.button:hover {
+    border-color: transparent;
+}
+
+.button:active:after {
+    background: #00000055;
+}
+
+.button:hover:before {
+    opacity: 1;
+}
+
+.button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--background-alt);
+    left: 0;
+    top: 0;
+    border-radius: 0.7em;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+@media (max-aspect-ratio: 3/2) {
+    .offers {
+        flex-direction: column;
+    }
+    .offer {
+        height: 20em;
+    }
+}
