@@ -50,6 +50,16 @@ body {
     z-index: 1;
 }
 
+.sidebar li a {
+    display: grid;
+    grid-template-columns: 4em 14em;
+}
+
+.sidebar li a span {
+    display: flex;
+    align-items: center;
+}
+
 .sidebar svg {
     width: 2em;
     height: 2em;
@@ -88,9 +98,9 @@ body {
     list-style: none;
 }
 
-.sidebar ul li {
-    display: block ruby;
-}
+/* .sidebar ul li { */
+/*     display: block ruby; */
+/* } */
 
 main {
     margin-left: 4em;
