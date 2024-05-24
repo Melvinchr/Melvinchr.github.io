@@ -79,7 +79,6 @@ body {
 
 #sepparator.sepparator-active {
     background: var(--primary);
-    filter: drop-shadow(0 0 0.2em var(--primary));
 }
 
 .sidebar a {
