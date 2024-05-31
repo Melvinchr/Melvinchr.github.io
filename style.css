@@ -103,11 +103,15 @@ header {
     align-items: center;
 }
 
+header p {
+    font-style: italic;
+    font-size: 1.2em;
+}
+
 .logo-container {
     display: grid;
     grid-template-columns: 6em 14em;
 }
-
 
 main {
     margin-left: 4em;
