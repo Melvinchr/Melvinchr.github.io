@@ -204,7 +204,7 @@ article {
 }
 
 .about-us-container {
-    margin: 4em 12em;
+    margin: 4em 30%;
     text-align: center;
 }
 
@@ -221,5 +221,8 @@ article {
     }
     .offer {
         height: 20em;
+    }
+    .about-us-container {
+        margin: 4em 5%;
     }
 }
