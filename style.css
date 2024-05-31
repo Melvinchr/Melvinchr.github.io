@@ -208,6 +208,26 @@ article {
     text-align: center;
 }
 
+footer {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5em;
+}
+
+footer .text-container {
+    width: 100%;
+    text-align: center;
+    border-bottom: 0.5em dotted var(--text);
+    padding-bottom: 3em;
+}
+
+footer img {
+    width: 20em;
+    height: 20em;
+}
+
 @keyframes glowing {
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
