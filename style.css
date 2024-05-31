@@ -22,7 +22,7 @@
 :root {
     --text: #0f0a0a;
     --background: #fcfcfc;
-    --background-alt: #fafcfd;
+    --background-alt: #dfece5;
     --primary: #0e7164;
     --secondary: #b7cbb3;
     --accent: #96b6a4;
@@ -166,13 +166,13 @@ article {
     content: '';
     background: linear-gradient(45deg, var(--primary), var(--accent), var(--secondary), var(--accent), var(--primary));
     position: absolute;
-    top: -2px;
-    left: -2px;
+    top: -0.3em;
+    left: -0.3em;
     background-size: 400%;
     z-index: -1;
     filter: blur(0.2em);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
+    width: calc(100% + 0.6em);
+    height: calc(100% + 0.6em);
     animation: glowing 20s linear infinite;
     opacity: 0;
     transition: opacity .3s ease-in-out;
@@ -181,10 +181,6 @@ article {
 
 .button:hover {
     border-color: transparent;
-}
-
-.button:active:after {
-    background: #00000055;
 }
 
 .button:hover:before {
@@ -219,7 +215,7 @@ footer {
 footer .text-container {
     width: 100%;
     text-align: center;
-    border-bottom: 0.5em dotted var(--text);
+    border-bottom: 0.5em dotted var(--primary);
     padding-bottom: 3em;
 }
 
