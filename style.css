@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: "Poppins";
-    src: url('assets/font/Poppins-Regular.ttf') format('truetype')
+    src: url('assets/font/Poppins-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -98,6 +98,12 @@ body {
 }
 
 header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-container {
     display: grid;
     grid-template-columns: 4em 14em;
 }
@@ -149,23 +155,15 @@ article {
 }
 
 .button {
-    bottom: 2em;
-    right: 2em;
-    position: absolute;
     background-color: var(--background-alt);
     color: var(--text);
-    cursor: pointer;
     outline: none;
     z-index: 0;
     border-radius: 0.7em;
-    padding: 0.5em 1.8em;
-    text-decoration: none;
-    border: 3px solid var(--text);
 }
 
 .button:before {
     content: '';
-    /* background: linear-gradient(45deg, #ff0000, #ff00c8, #7a00ff, #ff00c8, #ff0000); */
     background: linear-gradient(45deg, var(--primary), var(--accent), var(--secondary), var(--accent), var(--primary));
     position: absolute;
     top: -2px;
@@ -205,6 +203,11 @@ article {
     border-radius: 0.7em;
 }
 
+.about-us-container {
+    margin-top: 4em;
+    text-align: center;
+}
+
 @keyframes glowing {
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
@@ -214,6 +217,7 @@ article {
 @media (max-aspect-ratio: 3/2) {
     .offers {
         flex-direction: column;
+        gap: 2em;
     }
     .offer {
         height: 20em;
