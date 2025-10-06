@@ -1,0 +1,8 @@
+{
+  "name": "melvinchr",
+  "theme_color": "#123b5c",
+  "background_color": "#1b86db",
+  "display": "browser",
+  "scope": "/",
+  "start_url": "/https://melvinchr.github.io/"
+}
