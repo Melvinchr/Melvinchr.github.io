@@ -1,24 +1,9 @@
 {
-  "name": "melvinchr.github.io",
-  "version": "1.0.0",
-  "description": "",
-  "main": "service-worker.js",
   "scripts": {
     "scss": "sass assets/scss/style.scss dist/css/style.css"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Melvinchr/Melvinchr.github.io.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/Melvinchr/Melvinchr.github.io/issues"
-  },
-  "homepage": "https://github.com/Melvinchr/Melvinchr.github.io#readme",
   "devDependencies": {
+    "axe-core": "^4.11.0",
     "sass": "^1.93.3"
   }
 }
