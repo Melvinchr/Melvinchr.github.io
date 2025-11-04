@@ -2,10 +2,10 @@
   "scripts": {
     "scss:build": "sass --style=compressed --no-error-css --source-map style.sass style.css",
     "sass:watch": "sass --watch --style=expanded --embed-source-map style.sass:style.css"
-    
   },
   "devDependencies": {
     "axe-core": "^4.11.0",
+    "cypress": "^15.5.0",
     "sass": "^1.93.3"
   }
 }
