@@ -1,0 +1,12 @@
+$background: oklch(0.9911 0 0)
+$background-alt: oklch(0.9314 0.0167 162.73)
+$text: oklch(0.1515 0.0088 18.17)
+$primary: oklch(0.4936 0.0856 180.87)
+$secondary: oklch(0.8203 0.0395 140.46)
+$accent: oklch(0.7472 0.0433 160.52)
+
+body
+	background: @background
+	color: $text
+	height: 100vh
+	margin: 0
