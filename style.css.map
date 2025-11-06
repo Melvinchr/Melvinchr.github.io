@@ -1,11 +1,1 @@
-    {
-
-     “version”: “3”,
-
-     “mappings”: “4DAUA,qFAWQ,CACJ,OAAO,CAAE,KAAK,CAOlB,…”,
-
-     “sources”: [“../sass/_vars.css”,”../sass/styles.scss”],
-
-     “file”: “styles.css”
-
-    }
+{"version":3,"sourceRoot":"","sources":["style.sass"],"names":[],"mappings":"AAOA,KACC,WARY,iBASZ,MAPM,yBAQN,aACA","file":"style.css"}
