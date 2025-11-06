@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "sass:build": "sass --style=compressed --no-error-css --source-map style.sass style.css",
-    "sass:watch": "sass --watch --style=expanded --embed-source-map style.sass:style.css"
+    "sass:build": "sass --style=compressed --no-error-css --source-map style.sass sass.css",
+    "sass:watch": "sass --watch --style=expanded --embed-source-map style.sass:sass.css"
   },
   "devDependencies": {
     "axe-core": "^4.11.0",
